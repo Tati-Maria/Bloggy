@@ -1,4 +1,4 @@
-import Message from '../Components/Message';
+import Message from '@/Components/Message';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { db } from "../utils/firebase";
