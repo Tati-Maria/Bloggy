@@ -2,7 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import {useEffect, useState} from 'react';
 import { useRouter } from 'next/router';
-import Message from './Components/Message';
+import Message from '@/Components/Message';
 import { db, auth } from '../utils/firebase';
 import {toast} from "react-toastify"
 import { arrayUnion, doc, getDoc, onSnapshot, Timestamp, updateDoc } from 'firebase/firestore';
