@@ -44,7 +44,7 @@
 }
 
 .main-btn{
-    @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md hover:bg-purple-300 text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2;
+    @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md hover:bg-purple-300 text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2 dark:bg-purple-300;
 }
 
 .btn-extra{

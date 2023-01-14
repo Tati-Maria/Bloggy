@@ -30,7 +30,7 @@ const Login = () => {
     }, [user, route])
 
   return (
-    <div className='shadow-xl mt-32 p-10 border-2 border-purple-300 mx-6 rounded-lg md:max-w-6xl md:mx-auto bg-white'>
+    <div className='shadow-xl mt-32 p-10 border-2 border-purple-300 mx-6 rounded-lg md:max-w-6xl md:mx-auto dark:bg-slate-50 dark:text-gray-900'>
         <h2 className='text-2xl font-medium'>Join Today</h2>
         <div className='py-4'>
             <h3 className='py-4'>Sign in with one of the providers</h3>
