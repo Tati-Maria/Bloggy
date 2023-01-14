@@ -1,10 +1,10 @@
-import { auth, db } from "@/utils/firebase";
+import { auth, db } from "../utils/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { collection, deleteDoc, doc, onSnapshot, query, where } from "firebase/firestore";
 import {MdOutlineEdit, MdDelete} from "react-icons/md"
-import Message from "@/Components/Message";
+import Message from "./Components/Message";
 import Link from "next/link";
 
 const Dashboard = () => {

@@ -10,7 +10,7 @@ const Nav = () => {
 
   return (
     <div className='py-10'>
-        <nav className=' mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between'>
+        <nav className='mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between'>
             <h1 className='text-2xl font-lobsterTwo text-purple-500'>
                 <Link href={"/"}>
                 Bloggy

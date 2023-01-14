@@ -1,7 +1,7 @@
-import Message from '@/Components/Message';
+import Message from '../Components/Message';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
-import { db } from '@/utils/firebase';
+import { db } from "../utils/firebase";
 import { collection, onSnapshot, orderBy, query } from 'firebase/firestore';
 import Link from 'next/link';
 
