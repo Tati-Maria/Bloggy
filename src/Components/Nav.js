@@ -9,7 +9,7 @@ const Nav = () => {
     const [user, loading] = useAuthState(auth);
 
   return (
-    <div className='py-10'>
+    <div className='py-1'>
         <nav className='nav'>
             <h1 className='logo'>
                 <Link href={"/"}>
@@ -29,7 +29,7 @@ const Nav = () => {
                             <Link href={"/post"}>Post</Link>
                         </button>
                         <Link href={"/dashboard"}>
-                            <img src={user.photoURL} alt={user.displayName} className="rounded-full w-12"/>
+                            <img src={user.photoURL} alt={user.displayName} className="nav-img"/>
                         </Link>
                     </div>
                 )}

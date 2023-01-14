@@ -4,23 +4,51 @@
 @tailwind utilities;
 
 .nav{
-    @apply mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between;
+    @apply mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between py-5;
 }
 
 .nav .logo{
-    @apply text-2xl font-lobsterTwo text-purple-500;
+    @apply text-4xl font-lobsterTwo text-purple-500;
 }
 
 .navItems{
     @apply flex items-center gap-10;
 }
 
+.nav-img{
+    @apply rounded-full w-12
+}
+
 .message-container{
     @apply bg-white p-8 border-b-2 rounded-lg shadow dark:text-white dark:bg-gray-900 my-5;
 }
 
+.message-header{
+    @apply flex items-center gap-2;
+}
+
+.message-img{
+    @apply w-10 rounded-full;
+}
+
+.message-body{
+    @apply space-y-1 mt-2;
+}
+
+.message-body h3{
+    @apply text-lg
+}
+
+.message-body p{
+    @apply font-light text-base
+}
+
 .main-btn{
     @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md hover:bg-purple-300 text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2;
+}
+
+.btn-extra{
+    @apply flex items-center gap-2;
 }
 
 .secondary-btn{
@@ -45,4 +73,16 @@
 
 .text:focus::placeholder{
     @apply invisible;
+}
+
+.post-container{
+    @apply flex items-center gap-5 mt-7;
+}
+
+.post-btn{
+    @apply flex items-center gap-2 text-red-500 text-sm;
+}
+
+.post-btn-edit{
+    @apply flex items-center gap-2 text-sm text-purple-800;
 }

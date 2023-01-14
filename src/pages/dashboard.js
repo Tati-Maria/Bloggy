@@ -47,16 +47,16 @@ const Dashboard = () => {
                 {posts?.length === 0 ? (<span className="">No posts</span>) : 
                     (posts.map(post => (
                         <Message key={post.id} {...post}>
-                            <div className="flex items-center gap-5 mt-7">
+                            <div className="post-container">
                                 <button 
                                 onClick={() => handleDeletePost(post.id)}
-                                className="flex items-center gap-2 text-red-500 text-sm">
+                                className="post-btn">
                                     <MdDelete size={20} color="red"/>
                                     <span>Delete</span>
                                 </button>
                                 <Link href={{pathname: "/post", query: post}}>
                                 <button 
-                                className="flex items-center gap-2 text-sm text-purple-800"
+                                className="post-btn-edit"
                                 >
                                     <MdOutlineEdit size={20} color="purple"/>
                                     <span>Edit</span>
