@@ -85,7 +85,7 @@ const Details = () => {
             {allMessages?.map((message) => (
                     <div key={message.time} className="my-5 p-4 border-2 border-purple-300 bg-white rounded-md space-y-3">
                         <div className='flex items-center space-x-3'>
-                            <img src={message.avatar} alt={message.username} width={50} className="rounded-full" />
+                            <img src={message.avatar} alt={message.username}  className="rounded-full w-9" />
                             <h4 className='font-medium'>{message.username}</h4>
                         </div>
                         <p className='text-gray-800'>{message.message}</p>

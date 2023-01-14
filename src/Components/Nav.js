@@ -10,13 +10,13 @@ const Nav = () => {
 
   return (
     <div className='py-10'>
-        <nav className='mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between'>
-            <h1 className='text-2xl font-lobsterTwo text-purple-500'>
+        <nav className='nav'>
+            <h1 className='logo'>
                 <Link href={"/"}>
                 Bloggy
                 </Link>
             </h1>
-            <ul className='flex items-center gap-10'>
+            <ul className='navItems'>
                 {!user && (
                     <li className='secondary-btn' role="button">
                     <Link href={"/auth/login"}>Join Now</Link>

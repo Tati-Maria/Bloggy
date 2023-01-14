@@ -3,6 +3,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.nav{
+    @apply mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between;
+}
+
+.nav .logo{
+    @apply text-2xl font-lobsterTwo text-purple-500;
+}
+
+.navItems{
+    @apply flex items-center gap-10;
+}
+
+.message-container{
+    @apply bg-white p-8 border-b-2 rounded-lg shadow dark:text-white dark:bg-gray-900 my-5;
+}
+
 .main-btn{
     @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md hover:bg-purple-300 text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2;
 }
