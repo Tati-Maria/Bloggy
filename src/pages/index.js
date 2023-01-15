@@ -31,7 +31,7 @@ export default function Home() {
     <>
       <Head>
         <title>Bloggy</title>
-        <meta name="description" content="A small blog build with create-next-app by Maria Tati" />
+        <meta name="description" content="A small blog built with create-next-app by Maria Tati" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
