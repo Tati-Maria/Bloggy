@@ -70,7 +70,7 @@ const Details = () => {
             value={message}  
             placeholder="Send a message 😃"
             onChange={e => setMessage(e.target.value)}
-            className="bg-gray-900 text-sm p-2 w-full text-white placeholder:text-white placeholder:focus:invisible dark:bg-black dark:text-white"
+            className="comment-input"
             />
             <button
              className='py-2 px-4 bg-purple-400 text-sm font-medium'
@@ -86,7 +86,7 @@ const Details = () => {
                     <div key={message.time} className="my-5 p-4 border-2 border-purple-300 bg-white rounded-md space-y-3">
                         <div className='flex items-center space-x-3'>
                             <img src={message.avatar} alt={message.username}  className="rounded-full w-9" />
-                            <h4 className='font-medium'>{message.username}</h4>
+                            <h4 className='font-medium text-gray-900'>{message.username}</h4>
                         </div>
                         <p className='text-gray-800'>{message.message}</p>
                 </div>

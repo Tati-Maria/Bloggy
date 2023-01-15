@@ -6,6 +6,8 @@ import { collection, deleteDoc, doc, onSnapshot, query, where } from "firebase/f
 import {MdOutlineEdit, MdDelete} from "react-icons/md"
 import Message from "@/Components/Message";
 import Link from "next/link";
+import empty from "../images/post_empty.svg"
+import Image from "next/image";
 
 const Dashboard = () => {
     const [posts, setPosts] = useState([]);
@@ -40,11 +42,14 @@ const Dashboard = () => {
     }
 
   return (
-    <section className='mt-16'>
-        <div className='mx-6 lg:max-w-6xl lg:mx-auto'>
-            <h1 className='font-medium text-xl pb-10'>Your Posts</h1>
+    <section className='mt-16 min-h-screen p-5'>
+        <div className='your-post'>
+            <h1 className='font-medium text-2xl pb-10'>Your Posts</h1>
             <div>
-                {posts?.length === 0 ? (<span className="">No posts</span>) : 
+                {posts?.length === 0 ? (<div className="flex flex-col items-center gap-4">
+                    <Image src={empty} alt="no posts" className="opacity-40"  />
+                    <span className="text-center text-lg font-medium">No Posts</span>
+                </div>) :
                     (posts.map(post => (
                         <Message key={post.id} {...post}>
                             <div className="post-container">

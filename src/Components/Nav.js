@@ -23,7 +23,7 @@ const Nav = () => {
                 </li>
                 )}
                 {user && (
-                    <div className="flex items-center gap-6">
+                    <div className="nav-item">
                         <button className="secondary-btn flex items-center gap-2">
                             <AiOutlinePlus size={15} />
                             <Link href={"/post"}>Post</Link>

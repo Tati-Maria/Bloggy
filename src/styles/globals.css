@@ -19,6 +19,10 @@
     @apply rounded-full w-12
 }
 
+.nav-item{
+    @apply flex items-center gap-6;
+}
+
 .message-container{
     @apply bg-white p-8 border-b-2 rounded-lg shadow dark:text-white dark:bg-gray-900 my-5;
 }
@@ -44,7 +48,7 @@
 }
 
 .main-btn{
-    @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md hover:bg-purple-300 text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2 dark:bg-purple-300;
+    @apply border-2 border-purple-300 px-4 py-2 rounded-lg shadow-md text-gray-900 duration-300 w-full font-medium md:max-w-max flex items-center justify-center gap-2 dark:bg-purple-300;
 }
 
 .btn-extra{
@@ -55,8 +59,9 @@
     @apply py-2 px-4 text-sm bg-purple-300 border-2 border-purple-300 shadow text-gray-900 rounded-lg font-medium duration-300;
 }
 
-.secondary-btn:hover{
-    @apply border-2 border-purple-300 bg-transparent
+.secondary-btn:hover,
+.main-btn:hover{
+    @apply scale-110;
 }
 
 .form-container{
@@ -79,10 +84,47 @@
     @apply flex items-center gap-5 mt-7;
 }
 
+.your-post {
+    @apply mx-6 lg:max-w-6xl lg:mx-auto;
+}
+
 .post-btn{
     @apply flex items-center gap-2 text-red-500 text-sm;
 }
 
 .post-btn-edit{
     @apply flex items-center gap-2 text-sm text-purple-800;
+}
+
+.comment-input{
+    @apply bg-white text-sm p-2 w-full text-black placeholder:text-gray-900 placeholder:focus:invisible dark:bg-black dark:text-white;
+}
+
+/*Footer*/
+.footer-container{
+    @apply bg-purple-900 text-white
+}
+
+.footer-container .footer{
+    @apply mx-6 md:max-w-6xl lg:mx-auto text-center;
+}
+
+/*spinner*/
+.loading-spinner{
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #9D83FF;
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+}
+
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform:  rotate(360deg);
+    }
 }
