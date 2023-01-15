@@ -42,7 +42,7 @@ const Dashboard = () => {
     }
 
   return (
-    <section className='mt-16 min-h-screen p-5'>
+    <section className='mt-16 min-h-screen'>
         <div className='your-post'>
             <h1 className='font-medium text-2xl pb-10'>Your Posts</h1>
             <div>

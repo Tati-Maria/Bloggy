@@ -97,7 +97,7 @@
 }
 
 .comment-input{
-    @apply bg-white text-sm p-2 w-full text-black placeholder:text-gray-900 placeholder:focus:invisible dark:bg-black dark:text-white;
+    @apply bg-white text-sm p-2 w-full text-black placeholder:text-gray-900 placeholder:focus:invisible;
 }
 
 /*Footer*/
