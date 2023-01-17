@@ -6,7 +6,7 @@ import { collection, deleteDoc, doc, onSnapshot, query, where } from "firebase/f
 import {MdOutlineEdit, MdDelete} from "react-icons/md"
 import Message from "@/Components/Message";
 import Link from "next/link";
-import empty from "../images/post_empty.svg"
+import empty from "../images/posts.svg"
 import Image from "next/image";
 
 const Dashboard = () => {

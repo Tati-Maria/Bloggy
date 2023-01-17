@@ -31,6 +31,11 @@
     @apply flex items-center gap-2;
 }
 
+.message-header h2{
+    @apply text-base text-violet-700;
+}
+
+
 .message-img{
     @apply w-10 rounded-full;
 }
@@ -40,11 +45,11 @@
 }
 
 .message-body h3{
-    @apply text-lg
+    @apply text-base font-medium md:text-lg
 }
 
 .message-body p{
-    @apply font-light text-base
+    @apply font-light text-sm lg:text-base
 }
 
 .main-btn{
@@ -65,15 +70,15 @@
 }
 
 .form-container{
-    @apply my-20 p-12 shadow-lg rounded-lg  bg-white  text-gray-800 mx-auto max-w-md
+    @apply my-20 p-12 shadow-lg rounded-lg  bg-white  text-gray-800 mx-auto max-w-md;
 }
 
 .input{
-    @apply p-2 border-2 border-purple-400 rounded-lg w-full text-sm placeholder:focus:invisible
+    @apply p-2 border-2 border-purple-400 rounded-lg w-full text-sm placeholder:focus:invisible dark:bg-white
 }
 
 .text{
-    @apply border-2 border-purple-400 rounded-lg p-2 w-full h-48 text-sm;
+    @apply border-2 border-purple-400 rounded-lg p-2 w-full h-48 text-sm dark:bg-white;
 }
 
 .text:focus::placeholder{

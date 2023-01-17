@@ -33,7 +33,7 @@ export default function Home() {
         <title>Bloggy</title>
         <meta name="description" content="A small blog built with create-next-app by Maria Tati" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/blog.png" />
       </Head>
       <div className='mx-6 min-h-screen md:max-w-6xl lg:mx-auto my-12 text-lg'>
         <h2>See other people&apos;s posts</h2>

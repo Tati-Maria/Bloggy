@@ -3,11 +3,24 @@ import {AiOutlinePlus} from "react-icons/ai"
 import Link from 'next/link';
 import { auth } from '@/utils/firebase';
 import {useAuthState} from "react-firebase-hooks/auth";
-
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
+import {BsMoon, BsSun} from "react-icons/bs"
 
 const Nav = () => {
     const [user, loading] = useAuthState(auth);
+    //set up dark and light mode
+    const {theme, setTheme} = useTheme();
+    const [mounted, setMounted] = useState(false);
 
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
+    if(!mounted) {
+        return null
+    }
+    
   return (
     <div className='py-1'>
         <nav className='nav'>
@@ -17,6 +30,10 @@ const Nav = () => {
                 </Link>
             </h1>
             <ul className='navItems'>
+                <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="border-2 border-violet-500 py-1 px-2 rounded-lg bg-white">
+                   {theme === "light" && <BsMoon size={20} />}
+                   {theme === "dark" && <BsSun size={20} color="black" />}
+                </button>
                 {!user && (
                     <li className='secondary-btn' role="button">
                     <Link href={"/auth/login"}>Join Now</Link>
@@ -24,10 +41,12 @@ const Nav = () => {
                 )}
                 {user && (
                     <div className="nav-item">
+                        <Link href={"/post"}>
                         <button className="secondary-btn flex items-center gap-2">
                             <AiOutlinePlus size={15} />
-                            <Link href={"/post"}>Post</Link>
+                            Post
                         </button>
+                        </Link>
                         <Link href={"/dashboard"}>
                             <img src={user.photoURL} alt={user.displayName} className="nav-img"/>
                         </Link>
