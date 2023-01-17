@@ -30,9 +30,9 @@ const Nav = () => {
                 </Link>
             </h1>
             <ul className='navItems'>
-                <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")} className="border-2 border-violet-500 py-1 px-2 rounded-lg bg-white">
+                <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                    {theme === "light" && <BsMoon size={20} />}
-                   {theme === "dark" && <BsSun size={20} color="black" />}
+                   {theme === "dark" && <BsSun size={20} />}
                 </button>
                 {!user && (
                     <li className='secondary-btn' role="button">
