@@ -30,7 +30,7 @@ const Nav = () => {
                 </Link>
             </h1>
             <ul className='navItems'>
-                <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+                <button className="theme-btn" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
                    {theme === "light" && <BsMoon size={20} />}
                    {theme === "dark" && <BsSun size={20} />}
                 </button>

@@ -12,7 +12,7 @@
 }
 
 .navItems{
-    @apply flex items-center gap-10;
+    @apply flex items-center gap-6;
 }
 
 .nav-img{
@@ -132,4 +132,10 @@
     100%{
         transform:  rotate(360deg);
     }
+}
+
+/*Theme button*/
+
+.theme-btn{
+    @apply bg-purple-300 p-1 rounded-md text-black
 }
