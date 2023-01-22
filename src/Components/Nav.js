@@ -31,8 +31,7 @@ const Nav = () => {
             </h1>
             <ul className='navItems'>
                 <button className="theme-btn" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                   {theme === "light" && <BsMoon size={20} />}
-                   {theme === "dark" && <BsSun size={20} />}
+                    <span>{theme === "light" ? (<BsMoon size={20} />) : (<BsSun size={20} />)}</span>
                 </button>
                 {!user && (
                     <li className='secondary-btn' role="button">
