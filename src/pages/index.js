@@ -35,7 +35,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/blog.png" />
       </Head>
-      <div className='p-4 mx-6 min-h-screen md:max-w-6xl lg:mx-auto my-12 text-lg'>
+      <div className='mx-6 min-h-screen md:max-w-6xl lg:mx-auto my-12 text-lg'>
         <h2>See other people&apos;s posts</h2>
         {loading === true ? (<Spinner />) : (
           allPosts.map(post => (

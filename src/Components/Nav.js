@@ -22,7 +22,7 @@ const Nav = () => {
     }
     
   return (
-    <div className='py-1'>
+    <div className='p-4'>
         <nav className='nav'>
             <h1 className='logo'>
                 <Link href={"/"}>

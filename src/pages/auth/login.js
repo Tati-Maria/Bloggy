@@ -28,7 +28,7 @@ const Login = () => {
     }, [user, route])
 
   return (
-    <div className='shadow-xl mt-32 p-10 border-2 border-purple-300 mx-6 rounded-lg md:max-w-6xl md:mx-auto dark:text-gray-900'>
+    <div className='shadow-xl mt-32 p-10 border-2 border-purple-300 mx-6 rounded-lg md:max-w-6xl md:mx-auto dark:bg-gray-900 dark:text-white'>
         <h2 className='text-2xl font-medium'>Join Today</h2>
         <div className='py-4'>
             <h3 className='py-4'>Sign in with one of the providers</h3>
