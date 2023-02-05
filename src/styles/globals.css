@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .nav{
-    @apply mx-6 md:max-w-6xl md:mx-auto flex items-center justify-between py-5;
+    @apply mx-6 md:max-w-6xl md:mx-auto p-4 flex items-center justify-between py-5;
 }
 
 .nav .logo{
